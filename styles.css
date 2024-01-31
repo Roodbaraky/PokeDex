@@ -1,3 +1,8 @@
+h1{
+  position: relative;
+  text-align: center;
+  padding: 1%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -7,48 +12,101 @@ body {
     position: relative;
   }
   
+  .pokedex{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #abaabb ;
+  
+  }
+  .output{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    justify-items:flex-start;
+    
+  
+  }
+
   img {
-    display: block;
+    position: relative;
     width: 100%;
     height: auto;
   }
   
   .form {
-    position: absolute;
-    top: 10%; 
-    left: 5%; 
-   
+    position: relative; 
+    width: auto;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 2%;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 5%;
   }
+  .form label{
+    display: none;
+    margin:0;
+    padding:0;
+  }
+
   
   #search-input {
-    width: 80%;
-    margin-bottom: 10px;
+    width: 200px;
+    margin: 1.1%;
+  
   }
-  .top-container{
+  .left{
     position: absolute;
-    top: 30%; 
-    left: 10%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 55%;
+    display: grid;
+    grid-template-rows: 25% 42% 33%;
+  }
+
+  .content {
+display: flex;
+align-items: center;
+flex-direction: column;
+  }
+
+  .sprite-container{
+    width:40%;
+    height: auto;
+    text-align: center;
+  }
+  #sprite {
+height: auto;
+width: 100%;
   }
   
-  .bottom-container {
-    position: absolute;
-    bottom: 10%;
-    left: 60%;  background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+
+  
+  .right {
+   position: absolute;
+   left:55%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 45%;
+    display: grid;
+  }
+  .right-top {
+    height:100%;
   }
   
   table {
     width: 100%;
+    margin-top: 12%;
+    margin-left: 4%;
   }
-  
+  #table-head{
+    display: none;
+  }
+
   th, td {
-    padding: 8px;
+    padding: 5px;
     text-align: left;
   }
   
